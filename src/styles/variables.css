@@ -1,0 +1,180 @@
+:root {
+  /* =========================================
+     LIGHT THEME: Putih Bersih, Hitam, & Hijau Tua Elegan
+     ========================================= */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f6f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f9fbf9;
+  
+  --text-primary: #0a0f0d;    /* Hitam pekat modern */
+  --text-secondary: #47544e;  /* Abu-abu slate gelap */
+  --text-muted: #78857e;
+  
+  /* Hijau Tua & Aksen */
+  --color-primary: #0d4736;         /* Hijau Tua Mewah (Deep Forest / Emerald) */
+  --color-primary-hover: #073024;   /* Hijau Tua Lebih Gelap untuk hover */
+  --color-primary-light: #eaf4ef;   /* Tint hijau muda lembut untuk badge & tag */
+  --color-primary-border: rgba(13, 71, 54, 0.18);
+  --color-accent: #10b981;          /* Emerald cerah untuk aksen titik/pulse */
+  
+  /* Tombol Khusus */
+  --btn-primary-bg: #0d4736;
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: #073024;
+  
+  --btn-secondary-bg: #ffffff;
+  --btn-secondary-text: #0a0f0d;
+  --btn-secondary-border: #0a0f0d;
+  --btn-secondary-hover-bg: #0a0f0d;
+  --btn-secondary-hover-text: #ffffff;
+
+  /* Tape / Stiker Efek */
+  --tape-color: rgba(226, 232, 228, 0.75);
+  --tape-border: rgba(13, 71, 54, 0.1);
+
+  /* Garis Batas & Bayangan */
+  --border-color: #e2e8e4;
+  --border-color-hover: #0d4736;
+  
+  --shadow-sm: 0 1px 3px 0 rgba(10, 15, 13, 0.05);
+  --shadow-md: 0 6px 12px -2px rgba(10, 15, 13, 0.08), 0 3px 6px -2px rgba(10, 15, 13, 0.04);
+  --shadow-lg: 0 14px 28px -4px rgba(10, 15, 13, 0.1), 0 8px 12px -4px rgba(10, 15, 13, 0.06);
+  --shadow-primary: 0 10px 24px -4px rgba(13, 71, 54, 0.35);
+
+  /* Layout & Ukuran */
+  --container-max-width: 1140px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-full: 9999px;
+  
+  /* Tipografi & Transisi */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-bounce: 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* =========================================
+   DARK THEME: Hitam Pekat, Putih Bersih, & Hijau Tua / Emerald Glow
+   ========================================= */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-primary: #070a08;
+    --bg-secondary: #0d120f;
+    --bg-card: #111814;
+    --bg-card-hover: #16201b;
+    
+    --text-primary: #ffffff;
+    --text-secondary: #9ca8a1;
+    --text-muted: #63726a;
+    
+    --color-primary: #10b981;
+    --color-primary-hover: #34d399;
+    --color-primary-light: rgba(16, 185, 129, 0.12);
+    --color-primary-border: rgba(16, 185, 129, 0.25);
+    --color-accent: #34d399;
+    
+    --btn-primary-bg: #10b981;
+    --btn-primary-text: #052319;
+    --btn-primary-hover: #34d399;
+    
+    --btn-secondary-bg: transparent;
+    --btn-secondary-text: #ffffff;
+    --btn-secondary-border: rgba(255, 255, 255, 0.25);
+    --btn-secondary-hover-bg: #ffffff;
+    --btn-secondary-hover-text: #070a08;
+
+    --tape-color: rgba(26, 37, 31, 0.8);
+    --tape-border: rgba(16, 185, 129, 0.2);
+
+    --border-color: #1a251f;
+    --border-color-hover: #10b981;
+    
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 6px 12px -2px rgba(0, 0, 0, 0.6), 0 3px 6px -2px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 14px 28px -4px rgba(0, 0, 0, 0.7), 0 8px 12px -4px rgba(0, 0, 0, 0.6);
+    --shadow-primary: 0 10px 28px -4px rgba(16, 185, 129, 0.3);
+  }
+}
+
+/* Explicit data-theme="dark" attribute */
+:root[data-theme="dark"] {
+  --bg-primary: #070a08;
+  --bg-secondary: #0d120f;
+  --bg-card: #111814;
+  --bg-card-hover: #16201b;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #9ca8a1;
+  --text-muted: #63726a;
+  
+  --color-primary: #10b981;
+  --color-primary-hover: #34d399;
+  --color-primary-light: rgba(16, 185, 129, 0.12);
+  --color-primary-border: rgba(16, 185, 129, 0.25);
+  --color-accent: #34d399;
+  
+  --btn-primary-bg: #10b981;
+  --btn-primary-text: #052319;
+  --btn-primary-hover: #34d399;
+  
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: #ffffff;
+  --btn-secondary-border: rgba(255, 255, 255, 0.25);
+  --btn-secondary-hover-bg: #ffffff;
+  --btn-secondary-hover-text: #070a08;
+
+  --tape-color: rgba(26, 37, 31, 0.8);
+  --tape-border: rgba(16, 185, 129, 0.2);
+
+  --border-color: #1a251f;
+  --border-color-hover: #10b981;
+  
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 6px 12px -2px rgba(0, 0, 0, 0.6), 0 3px 6px -2px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 14px 28px -4px rgba(0, 0, 0, 0.7), 0 8px 12px -4px rgba(0, 0, 0, 0.6);
+  --shadow-primary: 0 10px 28px -4px rgba(16, 185, 129, 0.3);
+}
+
+/* Explicit data-theme="light" attribute */
+:root[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f6f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f9fbf9;
+  
+  --text-primary: #0a0f0d;
+  --text-secondary: #47544e;
+  --text-muted: #78857e;
+  
+  --color-primary: #0d4736;
+  --color-primary-hover: #073024;
+  --color-primary-light: #eaf4ef;
+  --color-primary-border: rgba(13, 71, 54, 0.18);
+  --color-accent: #10b981;
+  
+  --btn-primary-bg: #0d4736;
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: #073024;
+  
+  --btn-secondary-bg: #ffffff;
+  --btn-secondary-text: #0a0f0d;
+  --btn-secondary-border: #0a0f0d;
+  --btn-secondary-hover-bg: #0a0f0d;
+  --btn-secondary-hover-text: #ffffff;
+
+  --tape-color: rgba(226, 232, 228, 0.75);
+  --tape-border: rgba(13, 71, 54, 0.1);
+
+  --border-color: #e2e8e4;
+  --border-color-hover: #0d4736;
+  
+  --shadow-sm: 0 1px 3px 0 rgba(10, 15, 13, 0.05);
+  --shadow-md: 0 6px 12px -2px rgba(10, 15, 13, 0.08), 0 3px 6px -2px rgba(10, 15, 13, 0.04);
+  --shadow-lg: 0 14px 28px -4px rgba(10, 15, 13, 0.1), 0 8px 12px -4px rgba(10, 15, 13, 0.06);
+  --shadow-primary: 0 10px 24px -4px rgba(13, 71, 54, 0.35);
+}

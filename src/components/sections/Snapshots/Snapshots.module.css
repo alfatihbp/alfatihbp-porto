@@ -1,0 +1,166 @@
+.section {
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.scrapbookCanvas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .scrapbookCanvas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .scrapbookCanvas {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Individual Polaroid Photo Frame */
+.photoFrame {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem 1rem 1.25rem;
+  box-shadow: var(--shadow-md);
+  transform: rotate(var(--snap-rotation, 0deg));
+  transition: transform var(--transition-bounce), box-shadow var(--transition-normal), z-index 0s;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.photoFrame:hover {
+  transform: rotate(0deg) scale(1.06) translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+  z-index: 15;
+}
+
+/* Masking Tape */
+.tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1.5deg);
+  width: 75px;
+  height: 22px;
+  background-color: var(--tape-color);
+  border: 1px solid var(--tape-border);
+  backdrop-filter: blur(4px);
+  z-index: 5;
+}
+
+.imageBox {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background-color: #0d1410;
+  border: 1px solid var(--border-color);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-normal);
+}
+
+.photoFrame:hover .image {
+  transform: scale(1.05);
+}
+
+.captionBox {
+  margin-top: 0.85rem;
+  text-align: left;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.725rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.captionText {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 0.25rem;
+  line-height: 1.4;
+}
+
+/* Sticky Note */
+.stickyNote {
+  background-color: #fefce8;
+  color: #713f12;
+  border: 1px solid #fef08a;
+  border-radius: var(--radius-sm);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  transform: rotate(3deg);
+  transition: transform var(--transition-bounce), box-shadow var(--transition-normal);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+:global([data-theme="dark"]) .stickyNote {
+  background-color: #17231c;
+  color: #a7f3d0;
+  border-color: #23352a;
+}
+
+.stickyNote:hover {
+  transform: rotate(0deg) scale(1.06) translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  z-index: 15;
+}
+
+.pin {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ef4444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.noteTitle {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+  opacity: 0.85;
+}
+
+.noteBody {
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.noteSignature {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  opacity: 0.8;
+}
+

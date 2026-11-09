@@ -1,16 +1,26 @@
+import Navbar from '@/components/layout/Navbar/Navbar';
+import Hero from '@/components/sections/Hero/Hero';
+import Marquee from '@/components/common/Marquee/Marquee';
+import Projects from '@/components/sections/Projects/Projects';
+import Snapshots from '@/components/sections/Snapshots/Snapshots';
+import Skills from '@/components/sections/Skills/Skills';
+import Contact from '@/components/sections/Contact/Contact';
+import Footer from '@/components/layout/Footer/Footer';
+import './App.css';
+
 export default function App() {
   return (
-    <main style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-      <h1>Halo, Saya Developer</h1>
-      <p>Selamat datang di website portofolio saya.</p>
-
-      <section>
-        <h2>Proyek</h2>
-        <ul>
-          <li>Proyek 1 - Web Application</li>
-          <li>Proyek 2 - Mobile App</li>
-        </ul>
-      </section>
-    </main>
+    <div className="app-layout">
+      <Navbar />
+      <main>
+        <Hero />
+        <Marquee />
+        <Projects />
+        <Snapshots />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   );
 }

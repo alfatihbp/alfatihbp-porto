@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <rect width="400" height="300" fill="#0d1410"/>
+  <!-- Wall grid -->
+  <path d="M0 60h400M0 120h400M0 180h400" stroke="#16201a" stroke-width="1"/>
+  <path d="M60 0v300M120 0v300M180 0v300M240 0v300M300 0v300M360 0v300" stroke="#16201a" stroke-width="1"/>
+  <!-- Desk -->
+  <rect y="210" width="400" height="90" fill="#070a08"/>
+  <rect y="206" width="400" height="4" fill="#0d4736"/>
+  <!-- Monitor 1 -->
+  <rect x="80" y="80" width="150" height="100" rx="6" fill="#131b15" stroke="#2a3d31" stroke-width="2"/>
+  <rect x="90" y="90" width="130" height="80" fill="#0a0f0d"/>
+  <!-- Code lines on monitor -->
+  <rect x="100" y="102" width="60" height="4" rx="2" fill="#10b981"/>
+  <rect x="100" y="112" width="90" height="4" rx="2" fill="#f8fafc"/>
+  <rect x="110" y="122" width="70" height="4" rx="2" fill="#6ee7b7"/>
+  <rect x="110" y="132" width="85" height="4" rx="2" fill="#9ca8a1"/>
+  <rect x="100" y="142" width="50" height="4" rx="2" fill="#10b981"/>
+  <rect x="145" y="180" width="20" height="28" fill="#1a251e"/>
+  <rect x="130" y="206" width="50" height="4" rx="2" fill="#2a3d31"/>
+
+  <!-- Monitor 2 (Vertical) -->
+  <rect x="245" y="65" width="85" height="135" rx="6" fill="#131b15" stroke="#2a3d31" stroke-width="2"/>
+  <rect x="252" y="72" width="71" height="121" fill="#0a0f0d"/>
+  <rect x="260" y="85" width="40" height="4" rx="2" fill="#10b981"/>
+  <rect x="260" y="95" width="55" height="3" rx="1.5" fill="#a7f3d0"/>
+  <rect x="260" y="103" width="50" height="3" rx="1.5" fill="#a7f3d0"/>
+  <rect x="260" y="111" width="45" height="3" rx="1.5" fill="#a7f3d0"/>
+  <rect x="260" y="119" width="52" height="3" rx="1.5" fill="#a7f3d0"/>
+  <rect x="280" y="200" width="15" height="10" fill="#1a251e"/>
+  
+  <!-- Desk accessories: Lamp light glow -->
+  <circle cx="360" cy="90" r="45" fill="#10b981" fill-opacity="0.12"/>
+  <path d="M360 40 L345 90 L375 90 Z" fill="#25352c"/>
+  <rect x="358" y="90" width="4" height="120" fill="#25352c"/>
+  
+  <!-- Keyboard & Mouse -->
+  <rect x="115" y="225" width="110" height="35" rx="4" fill="#141c16" stroke="#2a3d31" stroke-width="1"/>
+  <ellipse cx="265" cy="242" rx="12" ry="18" fill="#141c16" stroke="#2a3d31" stroke-width="1"/>
+</svg>
+

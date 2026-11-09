@@ -1,0 +1,139 @@
+.section {
+  padding: 6rem 0 7rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.envelopeCard {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 2.5rem;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  transform: rotate(-1deg);
+  transition: transform var(--transition-bounce), box-shadow var(--transition-normal);
+}
+
+.envelopeCard:hover {
+  transform: rotate(0deg) translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+}
+
+/* Tape decoration */
+.tape {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%) rotate(1.5deg);
+  width: 95px;
+  height: 26px;
+  background-color: var(--tape-color);
+  border: 1px solid var(--tape-border);
+  backdrop-filter: blur(4px);
+  z-index: 5;
+}
+
+.stamp {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-family: var(--font-mono);
+  font-size: 0.725rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  border: 1.5px dashed var(--color-primary);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  transform: rotate(8deg);
+  letter-spacing: 0.5px;
+}
+
+.cardHeading {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+}
+
+.message {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2.25rem;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.emailButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  padding: 0.95rem 2.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-primary);
+  transition: all var(--transition-fast);
+}
+
+.emailButton:hover {
+  background-color: var(--btn-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.socialChips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.75rem;
+}
+
+.chip {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+}
+
+.chip:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .envelopeCard {
+    padding: 2.5rem 1.5rem;
+  }
+  .cardHeading {
+    font-size: 1.4rem;
+  }
+  .stamp {
+    position: static;
+    display: inline-block;
+    margin-bottom: 1rem;
+    transform: rotate(0deg);
+  }
+}

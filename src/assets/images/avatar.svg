@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d4736" />
+      <stop offset="100%" stop-color="#06241b" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="450" fill="url(#bgGrad)" rx="16"/>
+  <circle cx="200" cy="180" r="140" fill="url(#glow)"/>
+  
+  <!-- Grid Texture -->
+  <path d="M0 50h400M0 100h400M0 150h400M0 200h400M0 250h400M0 300h400M0 350h400M0 400h400" stroke="#10b981" stroke-opacity="0.08" stroke-width="1"/>
+  <path d="M50 0v450M100 0v450M150 0v450M200 0v450M250 0v450M300 0v450M350 0v450" stroke="#10b981" stroke-opacity="0.08" stroke-width="1"/>
+  
+  <!-- Silhouette Developer -->
+  <!-- Head & Hair -->
+  <ellipse cx="200" cy="155" rx="52" ry="62" fill="#f8fafc"/>
+  <path d="M145 145 C145 100 170 85 200 85 C230 85 255 100 255 145 C255 130 240 105 200 105 C160 105 145 130 145 145 Z" fill="#0a0f0d"/>
+  
+  <!-- Glasses -->
+  <rect x="162" y="145" width="30" height="20" rx="4" fill="none" stroke="#0a0f0d" stroke-width="3.5"/>
+  <rect x="208" y="145" width="30" height="20" rx="4" fill="none" stroke="#0a0f0d" stroke-width="3.5"/>
+  <line x1="192" y1="155" x2="208" y2="155" stroke="#0a0f0d" stroke-width="3.5"/>
+  <line x1="150" y1="152" x2="162" y2="155" stroke="#0a0f0d" stroke-width="3.5"/>
+  <line x1="238" y1="155" x2="250" y2="152" stroke="#0a0f0d" stroke-width="3.5"/>
+  
+  <!-- Smile -->
+  <path d="M185 185 Q200 195 215 185" stroke="#0a0f0d" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Neck -->
+  <path d="M185 210 L185 240 L215 240 L215 210 Z" fill="#f1f5f9"/>
+  
+  <!-- Shoulders & Hoodie -->
+  <path d="M110 320 C110 250 145 235 200 235 C255 235 290 250 290 320 L300 450 L100 450 Z" fill="#0a0f0d"/>
+  <!-- Hoodie Strings / Collar detail -->
+  <path d="M175 235 L200 280 L225 235" stroke="#10b981" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Laptop in front -->
+  <path d="M130 380 L270 380 L285 430 L115 430 Z" fill="#1e2923" stroke="#10b981" stroke-width="2"/>
+  <path d="M190 400 L210 400" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Floating Code Badges -->
+  <g transform="translate(45, 95) rotate(-8)">
+    <rect width="90" height="34" rx="17" fill="#ffffff" filter="drop-shadow(0 4px 10px rgba(0,0,0,0.3))"/>
+    <text x="45" y="22" font-family="monospace" font-size="13" font-weight="bold" fill="#0d4736" text-anchor="middle">&lt;React /&gt;</text>
+  </g>
+  
+  <g transform="translate(265, 110) rotate(8)">
+    <rect width="95" height="34" rx="17" fill="#10b981" filter="drop-shadow(0 4px 10px rgba(0,0,0,0.3))"/>
+    <text x="47" y="22" font-family="sans-serif" font-size="13" font-weight="bold" fill="#06241b" text-anchor="middle">⚡ Clean UI</text>
+  </g>
+</svg>
+
